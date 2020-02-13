@@ -1,0 +1,16 @@
+package com.tyss.carinformationmaintenance.service;
+
+import org.springframework.stereotype.Service;
+
+import com.tyss.carinformationmaintenance.dto.CarInfoBean;
+
+@Service
+public class CarServiceImpl implements CarService {
+
+	@Override
+	public boolean addCar(CarInfoBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

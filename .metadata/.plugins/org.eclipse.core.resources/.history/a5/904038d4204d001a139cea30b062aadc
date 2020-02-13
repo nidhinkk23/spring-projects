@@ -1,0 +1,13 @@
+package com.tyss.carinformationmaintenance.dao;
+
+import com.tyss.carinformationmaintenance.dto.AdminInfoBean;
+
+public class AdminDAOImpl implements AdminDAO {
+
+	@Override
+	public boolean addAdmin(AdminInfoBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

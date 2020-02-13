@@ -1,0 +1,14 @@
+package com.tyss.carinformationmaintenance;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CarTest {
+
+	@Test
+	void addCarTest() {
+		fail("Not yet implemented");
+	}
+
+}

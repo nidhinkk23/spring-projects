@@ -1,0 +1,14 @@
+package com.tyss.junittyss;
+
+public class SimpleCalculator {
+	
+	public Object div(int x,int y) {
+		if(y == 0) {
+			return null;
+		}else {
+			return x/y;
+		}
+		
+	}
+	
+}

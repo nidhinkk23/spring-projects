@@ -1,0 +1,20 @@
+package com.tyss.springmappingrest.dao;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceUnit;
+
+import com.tyss.springmappingrest.dto.EmployeeSecondaryInfo;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	@PersistenceUnit
+	private EntityManagerFactory factory;
+	
+	
+	@Override
+	public boolean addEmployee(EmployeeSecondaryInfo employeeSecondaryInfo) {
+		
+		return false;
+	}
+
+}

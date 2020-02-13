@@ -1,0 +1,41 @@
+package com.tyss.springmappingrest.dao;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "employee_primary_info")
+public class EmployeePrimaryInfo {
+	@Id
+	@GeneratedValue
+	@Column
+	private int empid;
+	@Column
+	private String name;
+	@Column
+	private double salary;
+	@Column
+	private int dept_id;
+	@Column
+	private String date;
+	@Column
+	private long phone;
+	@Column
+	private String official_email;
+	@Column
+	private String designation;
+	@Column
+	private String DOB;
+	@Column
+	private int manager_id;
+	@Column
+	private int experiance;
+}

@@ -1,0 +1,13 @@
+package com.tyss.springmappingrest.dao;
+
+import com.tyss.springmappingrest.dto.EmployeeSecondaryInfo;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	@Override
+	public boolean addEmployee(EmployeeSecondaryInfo employeeSecondaryInfo) {
+		
+		return false;
+	}
+
+}

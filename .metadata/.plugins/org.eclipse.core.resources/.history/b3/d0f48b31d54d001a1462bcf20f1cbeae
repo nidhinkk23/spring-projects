@@ -1,0 +1,21 @@
+package com.tyss.carinformationmaintenance;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.tyss.carinformationmaintenance.dto.CarInfoBean;
+import com.tyss.carinformationmaintenance.service.CarService;
+import com.tyss.carinformationmaintenance.service.CarServiceImpl;
+
+class CarTest {
+
+	@Test
+	void addCarTest() {
+		CarService carService = new CarServiceImpl();
+		CarInfoBean bean = new CarInfoBean();
+		boolean actual = carService.addCar(null);
+		assertEquals(false, actual);
+	}
+
+}

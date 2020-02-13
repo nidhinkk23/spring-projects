@@ -1,0 +1,16 @@
+package com.tyss.carinformationmaintenance.service;
+
+import org.springframework.stereotype.Service;
+
+import com.tyss.carinformationmaintenance.dto.AdminInfoBean;
+
+@Service
+public class AdminServiceImpl implements AdminService {
+
+	@Override
+	public boolean addAdmin(AdminInfoBean bean) {
+		
+		return false;
+	}
+
+}

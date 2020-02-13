@@ -1,0 +1,15 @@
+package com.tyss.carinformationmaintenance.dto;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "product_info")
+public class CarInfoBean {
+
+}

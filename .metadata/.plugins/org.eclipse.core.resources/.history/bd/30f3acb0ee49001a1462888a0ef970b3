@@ -1,0 +1,26 @@
+package com.tyss.junittyss;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+
+class SimpleCalculatorTest {
+
+	@Test
+	void test() {
+		SimpleCalculator calculator =new SimpleCalculator();
+		int actual = calculator.div(10, 10);
+		assertEquals(1, actual);
+	}
+	
+	
+	@ParameterizedTest
+	@MethodSource("getDivValues")
+	void getDivResultTest(int a,int b,int expected) {
+		SimpleCalculator calculator =new SimpleCalculator();
+		int actual = calculator.div(a, b);
+		assertEquals(expected, actual);
+	}
+}

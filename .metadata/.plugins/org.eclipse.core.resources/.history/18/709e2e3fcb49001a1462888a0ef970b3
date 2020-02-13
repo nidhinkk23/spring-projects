@@ -1,0 +1,24 @@
+package com.tyss.junittyss;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest {
+
+	@Test
+	void addTest() {
+		Calculator cal = new Calculator();
+		int actual = cal.add(5, 6);
+
+		assertEquals(11, actual);
+	}
+
+	@Test
+	void addNegativeTest() {
+		Calculator cal = new Calculator();
+		int actual = cal.add(-10, -5);
+
+		assertEquals(-15, actual);
+	}
+}

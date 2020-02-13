@@ -1,0 +1,5 @@
+package com.tyss.carinformationmaintenance.service;
+
+public class CarServiceImpl implements CarService {
+
+}

@@ -1,0 +1,13 @@
+package com.tyss.carinformationmaintenance.dao;
+
+import com.tyss.carinformationmaintenance.dto.CarInfoBean;
+
+public class CarDAOImpl implements CarDAO {
+
+	@Override
+	public boolean addCar(CarInfoBean bean) {
+		
+		return false;
+	}
+
+}

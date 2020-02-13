@@ -1,0 +1,23 @@
+package com.tyss.productrestapi.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tyss.productrestapi.dto.ProductInfoBean;
+import com.tyss.productrestapi.dto.ProductResponse;
+import com.tyss.productrestapi.service.ProductService;
+
+@RestController
+public class ProductRestController {
+	@Autowired
+	private ProductService service;
+	
+	public ProductResponse addProduct(@RequestBody ProductInfoBean bean) {
+		ProductResponse response = new ProductResponse();
+		
+		return response;
+	}
+	
+	
+}

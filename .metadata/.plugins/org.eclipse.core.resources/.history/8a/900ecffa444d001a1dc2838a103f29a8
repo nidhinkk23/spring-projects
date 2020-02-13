@@ -1,0 +1,22 @@
+package com.tyss.carinformationmaintenance.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tyss.carinformationmaintenance.dao.AdminDAO;
+import com.tyss.carinformationmaintenance.dto.AdminInfoBean;
+
+@Service
+public class AdminServiceImpl implements AdminService {
+
+	
+	@Autowired
+	AdminDAO dao;
+	
+	@Override
+	public boolean addAdmin(AdminInfoBean bean) {
+		
+		return dao.addAdmin(bean);
+	}
+
+}

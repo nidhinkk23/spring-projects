@@ -1,0 +1,9 @@
+package com.tyss.carinformationmaintenance.service;
+
+import com.tyss.carinformationmaintenance.dto.CarInfoBean;
+
+public interface CarService {
+	public boolean addCar(CarInfoBean bean);
+	public boolean deleteCar(int id);
+	public boolean modifyCar(CarInfoBean bean);
+}

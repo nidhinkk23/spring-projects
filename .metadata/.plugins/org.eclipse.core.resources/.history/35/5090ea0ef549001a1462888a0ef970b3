@@ -1,0 +1,7 @@
+package com.tyss.log4j;
+
+public class Demo {
+	public static void main(String[] args) {
+		
+	}
+}

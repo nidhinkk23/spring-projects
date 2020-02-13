@@ -1,0 +1,9 @@
+package com.tyss.springmappingrest.dao;
+
+import com.tyss.springmappingrest.dto.EmployeeSecondaryInfo;
+
+public interface EmployeeDAO {
+
+	public boolean addEmployee(EmployeeSecondaryInfo employeeSecondaryInfo);
+	
+}

@@ -1,0 +1,22 @@
+package com.tyss.productbootapi.controller;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import com.tyss.productbootapi.dto.ProductResponse;
+import com.tyss.productbootapi.exception.EmailAlreadyExistException;
+import com.tyss.springboot.dto.EmployeeResponse;
+
+@RestControllerAdvice
+public class EmployeeRestControllerAdvice {
+	
+	@ExceptionHandler(EmailAlreadyExistException.class)
+	public ProductResponse emailAlreadyExist(EmailAlreadyExistException e) {
+		ProductResponse response = new ProductResponse();
+		response.setStatusCode(501);
+		response.setMessage("Exception");
+		response.setDescription(e.getMessage());
+		return response;
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.tyss.springmappingrest.dao;
+
+public interface EmployeeDAO {
+
+	public boolean addEmployee();
+	
+}

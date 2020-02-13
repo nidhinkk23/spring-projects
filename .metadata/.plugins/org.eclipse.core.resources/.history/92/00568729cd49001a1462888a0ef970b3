@@ -1,0 +1,17 @@
+package com.tyss.junittyss;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class BMICalculatorTest {
+
+	@Test
+	void bmiCalculator() {
+		BMICalculator bmiCalculator = new BMICalculator();
+		double actual = bmiCalculator.bmiCalculator(10, 10);
+		
+		assertEquals(1, actual);
+	}
+
+}

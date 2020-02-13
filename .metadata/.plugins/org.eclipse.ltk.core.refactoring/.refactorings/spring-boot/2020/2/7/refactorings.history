@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EmailAlreadyExistException.java&apos; to &apos;car-information-maintenance/src/main/java/com.tyss.carinformationmaintenance.exception&apos;&#x0D;&#x0A;- Original project: &apos;spring-boot&apos;&#x0D;&#x0A;- Destination element: &apos;car-information-maintenance/src/main/java/com.tyss.carinformationmaintenance.exception&apos;&#x0D;&#x0A;- Original element: &apos;com.tyss.springboot.exception.EmailAlreadyExistException.java&apos;" description="Copy compilation unit" destination="=car-information-maintenance/src\/main\/java&lt;com.tyss.carinformationmaintenance.exception" element1="/src\/main\/java&lt;com.tyss.springboot.exception{EmailAlreadyExistException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1581479155105" units="1" version="1.0"/>
+</session>

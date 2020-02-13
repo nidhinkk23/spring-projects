@@ -1,0 +1,23 @@
+package com.tyss.carinformationmaintenance.dao;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceUnit;
+
+import com.tyss.carinformationmaintenance.dto.CarInfoBean;
+
+public class CarDAOImpl implements CarDAO {
+
+
+	@PersistenceUnit
+	private EntityManagerFactory factory;
+
+	
+	
+	
+	@Override
+	public boolean addCar(CarInfoBean bean) {
+		
+		return false;
+	}
+
+}

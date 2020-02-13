@@ -1,0 +1,13 @@
+package com.tyss.carinformationmaintenance.service;
+
+import com.tyss.carinformationmaintenance.dto.AdminInfoBean;
+
+public class AdminServiceImpl implements AdminService {
+
+	@Override
+	public boolean addAdmin(AdminInfoBean bean) {
+		
+		return false;
+	}
+
+}

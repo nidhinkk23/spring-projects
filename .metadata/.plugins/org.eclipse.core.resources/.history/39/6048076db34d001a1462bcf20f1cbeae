@@ -1,0 +1,15 @@
+package com.tyss.springmappingrest.dao;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "employee_primary_info")
+public class EmployeePrimaryInfo {
+
+}

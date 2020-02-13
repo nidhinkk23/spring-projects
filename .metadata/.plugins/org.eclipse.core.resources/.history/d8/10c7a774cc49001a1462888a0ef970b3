@@ -1,0 +1,8 @@
+package com.tyss.junittyss;
+
+public class BMICalculator {
+	public double bmiCal(double weight,double height) {
+		
+		return weight / (height * height);
+	}
+}

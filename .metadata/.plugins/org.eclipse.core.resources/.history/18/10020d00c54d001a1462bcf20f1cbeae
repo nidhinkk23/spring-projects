@@ -1,0 +1,5 @@
+package com.tyss.springmappingrest.dto;
+
+public class EmployeeAddressInfo {
+
+}

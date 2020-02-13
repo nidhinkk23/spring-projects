@@ -1,0 +1,8 @@
+[main] TRACE dimple  - Im trace method
+[main] DEBUG dimple  - Im debug method
+[main] INFO  dimple  - Im info method
+[main] WARN  dimple  - Im warn method
+[main] ERROR dimple  - Im error method
+[main] FATAL dimple  - Im fatal method
+[main] ERROR dimple  - Im error method
+[main] FATAL dimple  - Im fatal method

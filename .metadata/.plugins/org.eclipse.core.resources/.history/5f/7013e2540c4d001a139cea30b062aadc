@@ -1,0 +1,76 @@
+package com.tyss.carinformationmaintenance.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.PersistenceUnit;
+
+import org.springframework.stereotype.Repository;
+
+import com.tyss.carinformationmaintenance.dto.CarInfoBean;
+
+
+import lombok.extern.java.Log;
+
+
+@Log
+@Repository
+public class CarDAOImpl implements CarDAO {
+
+
+	@PersistenceUnit
+	private EntityManagerFactory factory;
+
+	@Override
+	public boolean addCar(CarInfoBean bean) {
+		
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		try {
+			manager.persist(bean);
+			transaction.commit();
+			return true;
+
+		} catch (Exception e) {
+			log.info(e.getMessage());
+
+			for (StackTraceElement element : e.getStackTrace()) {
+				log.info(e.toString());
+			}
+
+			return false;
+//			throw new NameAlreadyExistException("Name already exist");
+
+		}
+	}
+
+	@Override
+	public boolean deleteCar(int id) {
+		
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		CarInfoBean bean = manager.find(CarInfoBean.class, id);
+		manager.remove(bean);
+		transaction.commit();
+		return true;
+	}
+
+
+	@Override
+	public boolean modifyCar(CarInfoBean bean) {
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		CarInfoBean infoBean = manager.find(CarInfoBean.class, bean.getId());
+		return false;
+	}
+	
+	
+	
+	
+	
+	
+
+}//End of the class

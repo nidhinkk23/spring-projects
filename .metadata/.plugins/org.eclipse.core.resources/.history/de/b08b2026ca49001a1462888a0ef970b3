@@ -1,0 +1,17 @@
+package com.tyss.junittyss;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest {
+
+	@Test
+	void addTest() {
+		Calculator cal = new Calculator();
+		int i = cal.add(5, 6);
+		
+		assertEquals(11, i);
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.tyss.carinformationmaintenance.dao;
+
+import com.tyss.carinformationmaintenance.dto.CarInfoBean;
+
+public interface CarDAO {
+	
+	public boolean addCar(CarInfoBean bean);
+	public boolean deleteCar(int id);
+	public boolean modifyCar(CarInfoBean bean);
+	public CarInfoBean search(String name);
+}

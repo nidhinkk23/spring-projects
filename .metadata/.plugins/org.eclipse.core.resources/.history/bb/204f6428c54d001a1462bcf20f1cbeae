@@ -1,0 +1,20 @@
+package com.tyss.springmappingrest.dto;
+
+import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="Employee_Address_info")
+public class EmployeeAddressInfo {
+	@EmbeddedId
+	private EmployeeAddressPK addressPK;
+	@Column
+	private int house_no;
+	@Column
+	private String address1;
+}

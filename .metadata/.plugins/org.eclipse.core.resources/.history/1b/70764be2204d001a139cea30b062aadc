@@ -1,0 +1,20 @@
+package com.tyss.carinformationmaintenance.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.tyss.carinformationmaintenance.dto.AdminInfoBean;
+
+import lombok.extern.java.Log;
+
+
+@Log
+@Repository
+public class AdminDAOImpl implements AdminDAO {
+
+	@Override
+	public boolean addAdmin(AdminInfoBean bean) {
+		
+		return false;
+	}
+
+}
